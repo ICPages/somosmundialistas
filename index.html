@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mundial 2026</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container flex-column">
+
+    <!-- TÍTULO CENTRADO -->
+    <a class="navbar-brand fw-bold text-center w-100 fs-4">
+      Mundialistas 2026
+    </a>
+
+    <!-- BOTÓN MOBILE -->
+    <button class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENÚ -->
+    <div class="collapse navbar-collapse justify-content-center mt-3" id="menu">
+      <ul class="navbar-nav align-items-center gap-3">
+
+        <!-- SELECCIONES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            🌍 Selecciones
+          </a>
+          <ul class="dropdown-menu">
+
+            <li><a class="dropdown-item" href="alemania.html">Alemania</a></li>
+<li><a class="dropdown-item" href="arabia-saudita.html">Arabia Saudita</a></li>
+<li><a class="dropdown-item" href="argelia.html">Argelia</a></li>
+<li><a class="dropdown-item" href="argentina.html">Argentina</a></li>
+<li><a class="dropdown-item" href="australia.html">Australia</a></li>
+<li><a class="dropdown-item" href="austria.html">Austria</a></li>
+<li><a class="dropdown-item" href="bosnia-y-herzegovina.html">Bosnia y Herzegovina</a></li>
+<li><a class="dropdown-item" href="brasil.html">Brasil</a></li>
+<li><a class="dropdown-item" href="belgica.html">Bélgica</a></li>
+<li><a class="dropdown-item" href="cabo-verde.html">Cabo Verde</a></li>
+<li><a class="dropdown-item" href="canada.html">Canadá</a></li>
+<li><a class="dropdown-item" href="catar.html">Catar</a></li>
+<li><a class="dropdown-item" href="chequia.html">Chequia</a></li>
+<li><a class="dropdown-item" href="colombia.html">Colombia</a></li>
+<li><a class="dropdown-item" href="congo-democratico.html">Congo Democrático</a></li>
+<li><a class="dropdown-item" href="corea-del-sur.html">Corea del Sur</a></li>
+<li><a class="dropdown-item" href="costa-de-marfil.html">Costa de Marfil</a></li>
+<li><a class="dropdown-item" href="croacia.html">Croacia</a></li>
+<li><a class="dropdown-item" href="curasao.html">Curasao</a></li>
+<li><a class="dropdown-item" href="ecuador.html">Ecuador</a></li>
+<li><a class="dropdown-item" href="egipto.html">Egipto</a></li>
+<li><a class="dropdown-item" href="escocia.html">Escocia</a></li>
+<li><a class="dropdown-item" href="espana.html">España</a></li>
+<li><a class="dropdown-item" href="estados-unidos.html">Estados Unidos</a></li>
+<li><a class="dropdown-item" href="francia.html">Francia</a></li>
+<li><a class="dropdown-item" href="ghana.html">Ghana</a></li>
+<li><a class="dropdown-item" href="haiti.html">Haití</a></li>
+<li><a class="dropdown-item" href="inglaterra.html">Inglaterra</a></li>
+<li><a class="dropdown-item" href="irak.html">Irak</a></li>
+<li><a class="dropdown-item" href="iran.html">Irán</a></li>
+<li><a class="dropdown-item" href="japon.html">Japón</a></li>
+<li><a class="dropdown-item" href="jordania.html">Jordania</a></li>
+<li><a class="dropdown-item" href="marruecos.html">Marruecos</a></li>
+<li><a class="dropdown-item" href="mexico.html">México</a></li>
+<li><a class="dropdown-item" href="noruega.html">Noruega</a></li>
+<li><a class="dropdown-item" href="nueva-zelanda.html">Nueva Zelanda</a></li>
+<li><a class="dropdown-item" href="panama.html">Panamá</a></li>
+<li><a class="dropdown-item" href="paraguay.html">Paraguay</a></li>
+<li><a class="dropdown-item" href="paises-bajos.html">Países Bajos</a></li>
+<li><a class="dropdown-item" href="portugal.html">Portugal</a></li>
+<li><a class="dropdown-item" href="senegal.html">Senegal</a></li>
+<li><a class="dropdown-item" href="sudafrica.html">Sudáfrica</a></li>
+<li><a class="dropdown-item" href="suecia.html">Suecia</a></li>
+<li><a class="dropdown-item" href="suiza.html">Suiza</a></li>
+<li><a class="dropdown-item" href="turquia.html">Turquía</a></li>
+<li><a class="dropdown-item" href="tunez.html">Túnez</a></li>
+<li><a class="dropdown-item" href="uruguay.html">Uruguay</a></li>
+<li><a class="dropdown-item" href="uzbekistan.html">Uzbekistán</a></li>
+
+          </ul>
+        </li>
+
+        <!-- ESTADÍSTICAS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            📊 Estadísticas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">⚽ Goleadores</a></li>
+            <li><a class="dropdown-item">🟨 Tarjetas</a></li>
+            <li><a class="dropdown-item">🧤 Atajadas</a></li>
+          </ul>
+        </li>
+
+        <!-- SEDES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            🏟️ Sedes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bc-place.html">BC Place, Canadá</a></li>
+            <li><a class="dropdown-item" href="bmo-field.html">BMO Field, Canadá</a></li>
+          
+            <li><a class="dropdown-item" href="at-t-stadium.html">AT&T Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="arrowhead-stadium.html">Arrowhead Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="gillette-stadium.html">Gillette Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="hard-rock-stadium.html">Hard Rock Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="levi-stadium.html">Levi's Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="lincoln-financial-field.html">Lincoln Financial Field, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="lumen-field.html">Lumen Field, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="mercedes-benz-stadium.html">Mercedes-Benz Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="metlife-stadium.html">MetLife Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="nrg-stadium.html">NRG Stadium, Estados Unidos</a></li>
+            <li><a class="dropdown-item" href="sofi-stadium.html">SoFi Stadium, Estados Unidos</a></li>
+          
+            <li><a class="dropdown-item" href="estadio-akron.html">Estadio AKRON, México</a></li>
+            <li><a class="dropdown-item" href="estadio-banorte.html">Estadio Banorte México</a></li>
+            <li><a class="dropdown-item" href="estadio-bbva.html">Estadio BBVA, México</a></li>
+          </ul>
+          </li>
+
+        <!-- BOTÓN DESCARGA -->
+        <li class="nav-item">
+          <a class="btn btn-danger btn-sm ms-2" href="#">
+            <i class="bi bi-download"></i> Descargar Calendario
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- IZQUIERDA -->
+    <div class="col-lg-8">
+
+    <!-- FILTROS -->
+    <div class="card p-3 mb-3">
+        <div class="row">
+
+            <div class="col-md-4">
+                <select id="filterTeam" class="form-select">
+                    <option value="">Selección</option>
+                    <option>Alemania</option>
+                    <option>Arabia Saudita</option>
+                    <option>Argelia</option>
+                    <option>Argentina</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Bosnia y Herzegovina</option>
+                    <option>Brasil</option>
+                    <option>Bélgica</option>
+                    <option>Cabo Verde</option>
+                    <option>Canadá</option>
+                    <option>Catar</option>
+                    <option>Chequia</option>
+                    <option>Colombia</option>
+                    <option>Congo Democrático</option>
+                    <option>Corea del Sur</option>
+                    <option>Costa de Marfil</option>
+                    <option>Croacia</option>
+                    <option>Curasao</option>
+                    <option>Ecuador</option>
+                    <option>Egipto</option>
+                    <option>Escocia</option>
+                    <option>España</option>
+                    <option>Estados Unidos</option>
+                    <option>Francia</option>
+                    <option>Ghana</option>
+                    <option>Haití</option>
+                    <option>Inglaterra</option>
+                    <option>Irak</option>
+                    <option>Irán</option>
+                    <option>Japón</option>
+                    <option>Jordania</option>
+                    <option>Marruecos</option>
+                    <option>México</option>
+                    <option>Noruega</option>
+                    <option>Nueva Zelanda</option>
+                    <option>Panamá</option>
+                    <option>Paraguay</option>
+                    <option>Países Bajos</option>
+                    <option>Portugal</option>
+                    <option>Senegal</option>
+                    <option>Sudáfrica</option>
+                    <option>Suecia</option>
+                    <option>Suiza</option>
+                    <option>Turquía</option>
+                    <option>Túnez</option>
+                    <option>Uruguay</option>
+                    <option>Uzbekistán</option>
+                </select>
+            </div>
+    
+            <div class="col-md-3">
+                <select id="filterGroup" class="form-select">
+                    <option value="">Grupo</option>
+                    <option>Grupo A</option>
+                    <option>Grupo B</option>
+                    <option>Grupo C</option>
+                    <option>Grupo D</option>
+                    <option>Grupo E</option>
+                    <option>Grupo F</option>
+                    <option>Grupo G</option>
+                    <option>Grupo H</option>
+                    <option>Grupo I</option>
+                    <option>Grupo J</option>
+                    <option>Grupo K</option>
+                    <option>Grupo L</option>
+                </select>
+            </div>
+    
+            <div class="col-md-4">
+                <select id="filterDay" class="form-select">
+                    <option value="" disabled selected hidden>Día</option>
+                    <optgroup label="Fase de Grupos: Jornada 1">
+                    <option>Jueves, 11 de junio</option>
+                    <option>Viernes, 12 de junio</option>
+                    <option>Sábado, 13 de junio</option>
+                    <option>Domingo, 14 de junio</option>
+                    <option>Lunes, 15 de junio</option>
+                    <option>Martes, 16 de junio</option>
+                    <option>Miércoles, 17 de junio</option>
+                    </optgroup>
+                    <optgroup label="Fase de Grupos: Jornada 2">
+                    <option>Jueves, 18 de junio</option>
+                    <option>Viernes, 19 de junio</option>
+                    <option>Sábado, 20 de junio</option>
+                    <option>Domingo, 21 de junio</option>
+                    <option>Lunes, 22 de junio</option>
+                    <option>Martes, 23 de junio</option>
+                    </optgroup>
+                    <optgroup label="Fase de Grupos: Jornada 3">
+                    <option>Miércoles, 24 de junio</option>
+                    <option>Jueves, 25 de junio</option>
+                    <option>Viernes, 26 de junio</option>
+                    <option>Sábado, 27 de junio</option>
+                    </optgroup>
+                    <optgroup label="Dieciseisavos de Final">
+                    <option>Domingo, 28 de junio</option>
+                    <option>Lunes, 29 de junio</option>
+                    <option>Martes, 30 de junio</option>
+                    <option>Miércoles, 1 de julio</option>
+                    <option>Jueves, 2 de julio</option>
+                    <option>Viernes, 3 de julio</option>
+                    </optgroup>
+                    <optgroup label="Octavos de Final">
+                    <option>Sábado, 4 de julio</option>
+                    <option>Domingo, 5 de julio</option>
+                    <option>Lunes, 6 de julio</option>
+                    <option>Martes, 7 de julio</option>
+                    </optgroup>
+                    <option>Miércoles, 8 de julio</option>
+                    <optgroup label="Cuartos de Final">
+                    <option>Jueves, 9 de julio</option>
+                    <option>Viernes, 10 de julio</option>
+                    <option>Sábado, 11 de julio</option>
+                    </optgroup>
+                    <option>Domingo, 12 de julio</option>
+                    <option>Lunes, 13 de julio</option>
+                    <optgroup label="Semifinales">
+                    <option>Martes, 14 de julio</option>
+                    <option>Miércoles, 15 de julio</option>
+                    </optgroup>
+                    <option>Jueves, 16 de julio</option>
+                    <option>Viernes, 17 de julio</option>
+                    <optgroup label="Por Tercer Lugar">
+                    <option>Sábado, 18 de julio</option>
+                    </optgroup>
+                    <optgroup label="Final">
+                    <option>Domingo, 19 de julio</option>
+                    </optgroup>
+                </select>
+            </div>
+    
+            <div class="col-md-2">
+                <button onclick="resetFilters()"
+                    class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center"
+                    style="width:35px; height:35px;">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTIDOS -->
+    <div id="matches" class="row g-2">
+    
+        <!-- Jueves, 11 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="México Sudáfrica" data-group="Grupo A" data-day="Jueves, 11 de junio">
+            <b><i class="bi bi-calendar"></i> Jueves, 11 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
+            <div>Grupo A</div>
+            <div class="team"><span class="fi fi-mx"></span> México vs <span class="fi fi-za"></span> Sudáfrica</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Estadio Banorte, México</div>
+            <div><i class="bi bi-display"></i> Azteca 7, TUDN, ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Corea del Sur Chequia" data-group="Grupo A" data-day="Jueves, 11 de junio">
+            <b><i class="bi bi-calendar"></i> Jueves, 11 de junio <i class="bi bi-clock"></i> 8:00 PM</b>
+            <div>Grupo A</div>
+            <div class="team"><span class="fi fi-kr"></span> Corea del Sur vs <span class="fi fi-cz"></span> Chequia</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Estadio AKRON, México</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+    
+        <!-- Viernes, 12 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="Canadá Bosnia y Herzegovina" data-group="Grupo B" data-day="Viernes, 12 de junio">
+            <b><i class="bi bi-calendar"></i> Viernes, 12 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
+            <div>Grupo B</div>
+            <div class="team"><span class="fi fi-ca"></span> Canadá vs <span class="fi fi-ba"></span> Bosnia y Herzegovina
+            </div>
+            <div><i class="bi bi-geo-alt-fill"></i> BMO Field, Canadá</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Estados Unidos Paraguay" data-group="Grupo D" data-day="Viernes, 12 de junio">
+            <b><i class="bi bi-calendar"></i> Viernes, 12 de junio <i class="bi bi-clock"></i> 7:00 PM</b>
+            <div>Grupo D</div>
+            <div class="team"><span class="fi fi-us"></span> Estados Unidos vs <span class="fi fi-py"></span> Paraguay</div>
+            <div><i class="bi bi-geo-alt-fill"></i> SoFi Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+    
+        <!-- Sábado, 13 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="Catar Suiza" data-group="Grupo B" data-day="Sábado, 13 de junio">
+            <b><i class="bi bi-calendar"></i> Sábado, 13 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
+            <div>Grupo B</div>
+            <div class="team"><span class="fi fi-qa"></span> Catar vs <span class="fi fi-ch"></span> Suiza</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Levi's Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Brasil Marruecos" data-group="Grupo C" data-day="Sábado, 13 de junio">
+            <b><i class="bi bi-calendar"></i> Sábado, 13 de junio <i class="bi bi-clock"></i> 4:00 PM</b>
+            <div>Grupo C</div>
+            <div class="team"><span class="fi fi-br"></span> Brasil vs <span class="fi fi-ma"></span> Marruecos</div>
+            <div><i class="bi bi-geo-alt-fill"></i> MetLife Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> Azteca 7, TUDN, ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Haití Escocia" data-group="Grupo C" data-day="Sábado, 13 de junio">
+            <b><i class="bi bi-calendar"></i> Sábado, 13 de junio <i class="bi bi-clock"></i> 7:00 PM</b>
+            <div>Grupo C</div>
+            <div class="team"><span class="fi fi-ht"></span> Haití vs <span class="fi fi-gb-sct"></span> Escocia</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Gillette Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Australia Turquía" data-group="Grupo D" data-day="Sábado, 13 de junio">
+            <b><i class="bi bi-calendar"></i> Sábado, 13 de junio <i class="bi bi-clock"></i> 10:00 PM</b>
+            <div>Grupo D</div>
+            <div class="team"><span class="fi fi-au"></span> Australia vs <span class="fi fi-tr"></span> Turquía</div>
+            <div><i class="bi bi-geo-alt-fill"></i> BC Place, Canadá</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+    
+        <!-- Domingo, 14 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="Alemania Curasao" data-group="Grupo E" data-day="Domingo, 14 de junio">
+            <b><i class="bi bi-calendar"></i> Domingo, 14 de junio <i class="bi bi-clock"></i> 11:00 AM</b>
+            <div>Grupo E</div>
+            <div class="team"><span class="fi fi-de"></span> Alemania vs <span class="fi fi-cw"></span> Curasao</div>
+            <div><i class="bi bi-geo-alt-fill"></i> NRG Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Países Bajos Japón" data-group="Grupo F" data-day="Domingo, 14 de junio">
+            <b><i class="bi bi-calendar"></i> Domingo, 14 de junio <i class="bi bi-clock"></i> 2:00 PM</b>
+            <div>Grupo F</div>
+            <div class="team"><span class="fi fi-nl"></span> Países Bajos vs <span class="fi fi-jp"></span> Japón</div>
+            <div><i class="bi bi-geo-alt-fill"></i> AT&T Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Costa de Marfil Ecuador" data-group="Grupo E" data-day="Domingo, 14 de junio">
+            <b><i class="bi bi-calendar"></i> Domingo, 14 de junio <i class="bi bi-clock"></i> 5:00 PM</b>
+            <div>Grupo E</div>
+            <div class="team"><span class="fi fi-ci"></span> Costa de Marfil vs <span class="fi fi-ec"></span> Ecuador</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Lincoln Financial Field, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Suecia Túnez" data-group="Grupo F" data-day="Domingo, 14 de junio">
+            <b><i class="bi bi-calendar"></i> Domingo, 14 de junio <i class="bi bi-clock"></i> 8:00 PM</b>
+            <div>Grupo F</div>
+            <div class="team"><span class="fi fi-se"></span> Suecia vs <span class="fi fi-tn"></span> Túnez</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Estadio BBVA, México</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+       
+        <!-- Lunes, 15 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="España Cabo Verde" data-group="Grupo H" data-day="Lunes, 15 de junio">
+            <b><i class="bi bi-calendar"></i> Lunes, 15 de junio <i class="bi bi-clock"></i> 10:00 AM</b>
+            <div>Grupo H</div>
+            <div class="team"><span class="fi fi-es"></span> España vs <span class="fi fi-cv"></span> Cabo Verde</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Mercedes-Benz Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Bélgica Egipto" data-group="Grupo G" data-day="Lunes, 15 de junio">
+            <b><i class="bi bi-calendar"></i> Lunes, 15 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
+            <div>Grupo G</div>
+            <div class="team"><span class="fi fi-be"></span> Bélgica vs <span class="fi fi-eg"></span> Egipto</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Lumen Field, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Arabia Saudita Uruguay" data-group="Grupo H" data-day="Lunes, 15 de junio">
+            <b><i class="bi bi-calendar"></i> Lunes, 15 de junio <i class="bi bi-clock"></i> 4:00 PM</b>
+            <div>Grupo H</div>
+            <div class="team"><span class="fi fi-sa"></span> Arabia Saudita vs <span class="fi fi-uy"></span> Uruguay</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Hard Rock Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Irán Nueva Zelanda" data-group="Grupo G" data-day="Lunes, 15 de junio">
+            <b><i class="bi bi-calendar"></i> Lunes, 15 de junio <i class="bi bi-clock"></i> 7:00 PM</b>
+            <div>Grupo G</div>
+            <div class="team"><span class="fi fi-ir"></span> Irán vs <span class="fi fi-nz"></span> Nueva Zelanda</div>
+            <div><i class="bi bi-geo-alt-fill"></i> SoFi Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <!-- Martes, 16 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="Francia Senegal" data-group="Grupo I" data-day="Martes, 16 de junio">
+            <b><i class="bi bi-calendar"></i> Martes, 16 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
+            <div>Grupo I</div>
+            <div class="team"><span class="fi fi-fr"></span> Francia vs <span class="fi fi-sn"></span> Senegal</div>
+            <div><i class="bi bi-geo-alt-fill"></i> MetLife Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Irak Noruega" data-group="Grupo I" data-day="Martes, 16 de junio">
+            <b><i class="bi bi-calendar"></i> Martes, 16 de junio <i class="bi bi-clock"></i> 4:00 PM</b>
+            <div>Grupo I</div>
+            <div class="team"><span class="fi fi-iq"></span> Irak vs <span class="fi fi-no"></span> Noruega</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Gillette Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Argentina Argelia" data-group="Grupo J" data-day="Martes, 16 de junio">
+            <b><i class="bi bi-calendar"></i> Martes, 16 de junio <i class="bi bi-clock"></i> 7:00 PM</b>
+            <div>Grupo J</div>
+            <div class="team"><span class="fi fi-ar"></span> Argentina vs <span class="fi fi-dz"></span> Argelia</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Arrowhead Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> Azteca 7, TUDN, ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Austria Jordania" data-group="Grupo J" data-day="Martes, 16 de junio">
+            <b><i class="bi bi-calendar"></i> Martes, 16 de junio <i class="bi bi-clock"></i> 10:00 PM</b>
+            <div>Grupo J</div>
+            <div class="team"><span class="fi fi-at"></span> Austria vs <span class="fi fi-jo"></span> Jordania</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Levi's Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <!-- Miércoles, 17 de junio -->
+        <div class="col-lg-6">
+        <div class="card match" data-team="Portugal Congo Democrático" data-group="Grupo K" data-day="Miércoles, 17 de junio">
+            <b><i class="bi bi-calendar"></i> Miércoles, 17 de junio <i class="bi bi-clock"></i> 11:00 AM</b>
+            <div>Grupo K</div>
+            <div class="team"><span class="fi fi-pt"></span> Portugal vs <span class="fi fi-cd"></span> Congo Democrático</div>
+            <div><i class="bi bi-geo-alt-fill"></i> NRG Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Inglaterra Croacia" data-group="Grupo L" data-day="Miércoles, 17 de junio">
+            <b><i class="bi bi-calendar"></i> Miércoles, 17 de junio <i class="bi bi-clock"></i> 2:00 PM</b>
+            <div>Grupo L</div>
+            <div class="team"><span class="fi fi-gb-eng"></span> Inglaterra vs <span class="fi fi-hr"></span> Croacia</div>
+            <div><i class="bi bi-geo-alt-fill"></i> AT&T Stadium, Estados Unidos</div>
+            <div><i class="bi bi-display"></i> Azteca 7, TUDN, ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Ghana Panamá" data-group="Grupo L" data-day="Miércoles, 17 de junio">
+            <b><i class="bi bi-calendar"></i> Miércoles, 17 de junio <i class="bi bi-clock"></i> 5:00 PM</b>
+            <div>Grupo L</div>
+            <div class="team"><span class="fi fi-gh"></span> Ghana vs <span class="fi fi-pa"></span> Panamá</div>
+            <div><i class="bi bi-geo-alt-fill"></i> BMO Field, Canadá</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div class="card match" data-team="Uzbekistán Colombia" data-group="Grupo K" data-day="Miércoles, 17 de junio">
+            <b><i class="bi bi-calendar"></i> Miércoles, 17 de junio <i class="bi bi-clock"></i> 8:00 PM</b>
+            <div>Grupo J</div>
+            <div class="team"><span class="fi fi-uz"></span> Uzbekistán vs <span class="fi fi-co"></span> Colombia</div>
+            <div><i class="bi bi-geo-alt-fill"></i> Estadio Banorte, México</div>
+            <div><i class="bi bi-display"></i> ViX+</div>
+    
+            <div>
+                <button onclick="vote(this,'home')" class="btn btn-success btn-sm">Local</button>
+                <button onclick="vote(this,'draw')" class="btn btn-secondary btn-sm">Empate</button>
+                <button onclick="vote(this,'away')" class="btn btn-danger btn-sm">Visitante</button>
+            </div>
+    
+            <div class="result"></div>
+        </div>
+        </div>
+    
+    </div>
+    </div>
+
+    <!-- DERECHA -->
+<div class="col-lg-4">
+
+  <!-- GRUPO A -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo A</h5>
+    <table class="table table-sm text-center">
+      <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-mx"></span> México</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-za"></span> Sudáfrica</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-kr"></span> Corea del Sur</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-cz"></span> Chequia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO B -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo B</h5>
+    <table class="table table-sm text-center">
+        <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-ca"></span> Canadá</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ba"></span> Bosnia y Herzegovina</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-qa"></span> Catar</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ch"></span> Suiza</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO C -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo C</h5>
+    <table class="table table-sm text-center">
+        <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-br"></span> Brasil</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ma"></span> Marruecos</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ht"></span> Haití</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-gb-sct"></span> Escocia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO D -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo D</h5>
+    <table class="table table-sm text-center">
+        <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-us"></span> Estados Unidos</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-py"></span> Paraguay</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-au"></span> Australia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-tr"></span> Turquía</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO E -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo E</h5>
+    <table class="table table-sm text-center">
+        <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-de"></span> Alemania</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-cw"></span> Curasao</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ci"></span> Costa de Marfil</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-ec"></span> Ecuador</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO F -->
+  <div class="card p-3 mb-3">
+    <h5>Grupo F</h5>
+    <table class="table table-sm text-center">
+        <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fi fi-nl"></span> Países Bajos</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-jp"></span> Japón</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-se"></span> Suecia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><span class="fi fi-tn"></span> Túnez</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRUPO G -->
+<div class="card p-3 mb-3">
+  <h5>Grupo G</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-be"></span> Bélgica</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-eg"></span> Egipto</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-ir"></span> Irán</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-nz"></span> Nueva Zelanda</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GRUPO H -->
+<div class="card p-3 mb-3">
+  <h5>Grupo H</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-es"></span> España</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-cv"></span> Cabo Verde</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-sa"></span> Arabia Saudita</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-uy"></span> Uruguay</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GRUPO I -->
+<div class="card p-3 mb-3">
+  <h5>Grupo I</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-fr"></span> Francia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-sn"></span> Senegal</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-iq"></span> Irak</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-no"></span> Noruega</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GRUPO J -->
+<div class="card p-3 mb-3">
+  <h5>Grupo J</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-ar"></span> Argentina</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-dz"></span> Argelia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-at"></span> Austria</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-jo"></span> Jordania</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GRUPO K -->
+<div class="card p-3 mb-3">
+  <h5>Grupo K</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-pt"></span> Portugal</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-cd"></span> Congo Democrático</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-uz"></span> Uzbekistán</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-co"></span> Colombia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GRUPO L -->
+<div class="card p-3 mb-3">
+  <h5>Grupo L</h5>
+  <table class="table table-sm text-center">
+    <thead>
+        <tr>
+          <th>Equipo</th><th>JJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>PTS</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr><td><span class="fi fi-gb-eng"></span> Inglaterra</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-hr"></span> Croacia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-gh"></span> Ghana</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td><span class="fi fi-pa"></span> Panamá</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
