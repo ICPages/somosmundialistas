@@ -8,6 +8,9 @@ function filterMatches() {
     const group = document.getElementById("filterGroup").value;
     const day = document.getElementById("filterDay").value;
 
+    // 🔥 Detectar si hay filtros activos (excepto día)
+    const hasOtherFilters = team || group;
+
     document.querySelectorAll("#matches > div").forEach(col => {
         const match = col.querySelector(".match");
 
@@ -17,11 +20,14 @@ function filterMatches() {
 
         let show = true;
 
+        // 👉 FILTROS PRINCIPALES
         if (team && !matchTeams.includes(team)) show = false;
         if (group && group !== matchGroup) show = false;
-        if (day && day !== matchDay) show = false;
 
-        col.style.display = show ? "" : "none"; // 🔥 CLAVE
+        // 👉 SOLO aplicar día si NO hay otros filtros
+        if (!hasOtherFilters && day && day !== matchDay) show = false;
+
+        col.style.display = show ? "" : "none";
     });
 }
 
