@@ -1,7 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f4f6f9;
+    background: #0F172A;
     font-size: 14px; /* 🔽 antes ~16px */
+    color: #F59E0B;
 }
 
 .navbar-brand {
