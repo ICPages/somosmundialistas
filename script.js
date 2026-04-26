@@ -8,24 +8,53 @@ function filterMatches() {
     const group = document.getElementById("filterGroup").value;
     const day = document.getElementById("filterDay").value;
 
-    // 🔥 Detectar si hay filtros activos (excepto día)
     const hasOtherFilters = team || group;
 
     document.querySelectorAll("#matches > div").forEach(col => {
         const match = col.querySelector(".match");
 
-        const matchTeams = match.dataset.team.toLowerCase();
+        const isAd = match.dataset.ad === "true";
+        const adType = match.dataset.adType;
+        const matchTeams = (match.dataset.team || "").toLowerCase();
         const matchGroup = match.dataset.group;
         const matchDay = match.dataset.day;
 
         let show = true;
 
-        // 👉 FILTROS PRINCIPALES
-        if (team && !matchTeams.includes(team)) show = false;
-        if (group && group !== matchGroup) show = false;
+        // 👉 FILTRO POR SELECCIÓN (oculta anuncios normales)
+        if (team) {
+            if (isAd) {
+                show = false;
+            } else if (!matchTeams.includes(team)) {
+                show = false;
+            }
+        }
 
-        // 👉 SOLO aplicar día si NO hay otros filtros
-        if (!hasOtherFilters && day && day !== matchDay) show = false;
+        // 👉 FILTRO POR GRUPO
+        if (group && matchGroup !== "all" && group !== matchGroup) show = false;
+
+        // 👉 FILTRO POR DÍA
+        if (!hasOtherFilters && day && matchDay !== "all" && day !== matchDay) show = false;
+
+        // 👉 OCULTAR anuncios si no hay filtros activos
+        if (!team && !group && !day && isAd) {
+            show = false;
+        }
+
+        // 🔥 👉 AQUÍ VA EL BLOQUE NUEVO
+        if (isAd) {
+
+            // ANUNCIO SOLO PARA SELECCIÓN
+            if (adType === "team") {
+                show = !!team; // solo si hay selección activa
+            }
+
+            // ANUNCIO GENERAL (grupo/día)
+            if (adType === "general") {
+                if (!group && !day) show = false;
+                if (team) show = false;
+            }
+        }
 
         col.style.display = show ? "" : "none";
     });
