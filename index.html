@@ -49,32 +49,32 @@
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">⚽ Competencias</a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Liga MX
+              <a class="dropdown-item d-flex justify-content-between align-items-center">Liga MX
                 <span class="badge bg-secondary ms-2">Próximamente</span></a>
             </li>
           
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Liga MX Femenil
+              <a class="dropdown-item d-flex justify-content-between align-items-center">Liga MX Femenil
                 <span class="badge bg-secondary ms-2">Próximamente</span></a>
             </li>
           
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Champions League
+              <a class="dropdown-item d-flex justify-content-between align-items-center">Champions League
+                <span class="badge bg-secondary ms-2">Próximamente</span></a>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center">Box
                 <span class="badge bg-secondary ms-2">Próximamente</span></a>
             </li>
           
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">NBA
+              <a class="dropdown-item d-flex justify-content-between align-items-center">NBA
                 <span class="badge bg-secondary ms-2">Próximamente</span></a>
             </li>
           
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">NFL
-                <span class="badge bg-secondary ms-2">Próximamente</span></a>
-            </li>
-          
-            <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Box
+              <a class="dropdown-item d-flex justify-content-between align-items-center">NFL
                 <span class="badge bg-secondary ms-2">Próximamente</span></a>
             </li>
           </ul>
@@ -82,20 +82,16 @@
 
         <!-- REDES -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            📱 Redes
-          </a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">📱 Redes</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Facebook</a></li>
-            <li><a class="dropdown-item" href="#">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/share/1Raprj7dr2/" target="_blank">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/beer.stadium?igsh=MTRucXNiempxZnV6dA==" target="_blank">Instagram</a></li>
           </ul>
         </li>
 
         <!-- CTA (MUY IMPORTANTE) -->
         <li class="nav-item">
-          <a class="btn btn-warning fw-semibold ms-lg-3" href="#">
-            🍻 Promociona tu bar
-          </a>
+          <a class="btn btn-warning fw-semibold ms-lg-3" href="https://wa.me/522221106016?text=%C2%A1Hola%20*Beer%20Stadium*!%20Quiero%20anunciar%20mi%20establecimiento%20en%20tu%20sitio%20web." target="_blank">🍻 Promociona tu bar</a>
         </li>
 
       </ul>
@@ -114,10 +110,10 @@
 
     <!-- FILTROS -->
     <div class="card p-3 mb-3">
-        <div class="row">
+        <div class="row justify-content-center text-center">
 
-            <div class="col-md-4">
-                <select id="filterTeam" class="form-select">
+            <div class="col-12 col-md-4 mb-2">
+                <select id="filterTeam" class="form-select w-70 mx-auto">
                     <option value="">Selección</option>
                     <option>Alemania</option>
                     <option>Arabia Saudita</option>
@@ -170,8 +166,8 @@
                 </select>
             </div>
     
-            <div class="col-md-3">
-                <select id="filterGroup" class="form-select">
+            <div class="col-12 col-md-3 mb-2">
+                <select id="filterGroup" class="form-select w-70 mx-auto">
                     <option value="">Grupo</option>
                     <option>Grupo A</option>
                     <option>Grupo B</option>
@@ -188,8 +184,8 @@
                 </select>
             </div>
     
-            <div class="col-md-3">
-                <select id="filterDay" class="form-select">
+            <div class="col-12 col-md-3 mb-2">
+                <select id="filterDay" class="form-select w-70 mx-auto">
                     <option value="" disabled selected hidden>Día</option>
                     <optgroup label="Fase de Grupos: Jornada 1">
                     <option>11 de junio</option>
@@ -251,12 +247,8 @@
                 </select>
             </div>
     
-            <div class="col-md-2">
-                <button onclick="resetFilters()"
-                    class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                    style="width:35px; height:35px;">
-                    <i class="bi bi-x-lg"></i>
-                </button>
+            <div class="col-12 col-md-2 mb-2 d-flex justify-content-center">
+              <button onclick="resetFilters()" class="btn btn-outline-danger btn-sm fw-semibold px-3">Reiniciar</button>
             </div>
         </div>
     </div>
@@ -1478,7 +1470,7 @@
     
       <!-- Sábado, 27 de junio -->
       <div class="col-lg-6">
-        <div class="card match" data-team="Croacia Ghana" data-group="Grupo L" data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Croacia Ghana" data-group="Grupo L" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 3:00 PM</b>
           <div>Grupo L</div>
           <div class="team"><span class="fi fi-hr"></span> Croacia vs <span class="fi fi-gh"></span> Ghana</div>
@@ -1496,7 +1488,7 @@
       </div>
     
       <div class="col-lg-6">
-        <div class="card match" data-team="Panamá Inglaterra" data-group="Grupo L" data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Panamá Inglaterra" data-group="Grupo L" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 3:00 PM</b>
           <div>Grupo L</div>
           <div class="team"><span class="fi fi-pa"></span> Panamá vs <span class="fi fi-gb-eng"></span> Inglaterra</div>
@@ -1514,7 +1506,7 @@
       </div>
     
       <div class="col-lg-6">
-        <div class="card match" data-team="Colombia Portugal" data-group="Grupo K" data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Colombia Portugal" data-group="Grupo K" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 5:30 PM</b>
           <div>Grupo K</div>
           <div class="team"><span class="fi fi-co"></span> Colombia vs <span class="fi fi-pt"></span> Portugal</div>
@@ -1532,8 +1524,7 @@
       </div>
     
       <div class="col-lg-6">
-        <div class="card match" data-team="Congo Democrático Uzbekistán" data-group="Grupo K"
-          data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Congo Democrático Uzbekistán" data-group="Grupo K" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 5:30 PM</b>
           <div>Grupo K</div>
           <div class="team"><span class="fi fi-cd"></span> Congo Democrático vs <span class="fi fi-uz"></span> Uzbekistán
@@ -1552,7 +1543,7 @@
       </div>
     
       <div class="col-lg-6">
-        <div class="card match" data-team="Argelia Austria" data-group="Grupo J" data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Argelia Austria" data-group="Grupo J" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 8:00 PM</b>
           <div>Grupo J</div>
           <div class="team"><span class="fi fi-dz"></span> Argelia vs <span class="fi fi-at"></span> Austria</div>
@@ -1570,7 +1561,7 @@
       </div>
     
       <div class="col-lg-6">
-        <div class="card match" data-team="Jordania Argentina" data-group="Grupo J" data-day="Sábado, 27 de junio">
+        <div class="card match" data-team="Jordania Argentina" data-group="Grupo J" data-day="27 de junio">
           <b><i class="bi bi-calendar"></i> Sábado, 27 de junio <i class="bi bi-clock"></i> 8:00 PM</b>
           <div>Grupo J</div>
           <div class="team"><span class="fi fi-jo"></span> Jordania vs <span class="fi fi-ar"></span> Argentina</div>
@@ -1820,8 +1811,7 @@
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">        
           <h6 class="fw-bold mb-2">📊 La tabla está cerrada… el ambiente no</h6>       
           <p class="mb-3">Sigue a tu selección en los mejores sportbar de tu ciudad. ⚽🔥</p>
-          <a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a>
-        
+          <div><a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a></div>
         </div>
     
         <!-- GRUPO D -->
@@ -2027,7 +2017,7 @@
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">       
           <h6 class="fw-bold mb-2">⚽ Cada punto se vive mejor acompañado</h6>       
           <p class="mb-3">Apoya a tu equipo con ambiente, gritos y emoción real. 🍻</p>        
-          <a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a>        
+          <div><a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a></div>     
         </div>
     
         <!-- GRUPO G -->
@@ -2233,7 +2223,7 @@
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">        
           <h6 class="fw-bold mb-2">🔥 Se define el grupo… ¿dónde lo vas a ver?</h6>       
           <p class="mb-3">Encuentra sportbars con el mejor ambiente para estos partidos clave.</p>       
-          <a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a>       
+          <div><a href="puebla.html" class="btn btn-dark fw-semibold px-4">Conocer Sportbars</a></div>
         </div>
     
         <!-- GRUPO J -->
