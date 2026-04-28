@@ -37,12 +37,7 @@
 
         <!-- CIUDADES -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle fw-semibold" data-bs-toggle="dropdown">📍 Dónde Ver</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="acapulco.html">Acapulco</a></li>
-            <li><a class="dropdown-item" href="puebla.html">Puebla</a></li>
-            <li><a class="dropdown-item" href="queretaro.html">Querétaro</a></li>
-          </ul>
+          <a class="nav-link fw-semibold" href="#" onclick="openCityModal()">📍 <span id="currentCity">Tu ciudad</span></a>
         </li>
 
         <!-- LIGAS (TRÁFICO) -->
@@ -101,6 +96,7 @@
   </div>
 </nav>
 
+<!-- CONTENIDO -->
 <div class="container mt-4">
 
   <!-- IZQUIERDA / DERECHA -->
@@ -1576,22 +1572,22 @@
         </div>
       </div>
 
-      <!-- PUBLICIDAD GRUPO Y FECHA -->
+      <!-- ANUNCIO 1 -->
       <div class="mb-4 col-lg-12">
         <div class="card match text-center text-white border-0" data-team="" data-group="all" data-day="all"
           data-ad="true" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
-          <h6 class="fw-bold mb-2" style="color: #ffff;">📅 ¿Ya sabes dónde ver estos partidos?</h6>       
-          <p class="mb-3">No los veas solo… vívelos en un sport bar con ambiente, pantallas y promos. 🍻</p>
-          <div><a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a></div>   
+          <h6 class="ads-title fw-bold mb-2" style="color: #ffff;">📅 ¿Ya sabes dónde ver estos partidos en tu ciudad?</h6>       
+          <p class="ads-text mb-3">No los veas solo… vívelos en un sport bar con ambiente, pantallas y promos. 🍻</p>
+          <div><a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Descubrir Sports Bars en Tu Ciudad</a></div>   
         </div>
       </div>
-      <!-- PUBLICIDAD SELECCION -->
+      <!-- ANUNCIO 2 -->
       <div class="mb-4 col-lg-6">
         <div class="card match text-center text-white border-0" data-team="all" data-group="" data-day="" data-ad="true"
           data-ad-type="team" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
-          <h6 class="fw-bold mb-3" style="color: #ffff;">⚽ ¡Vamos equipo!</h6>       
-          <p class="mb-4">Apoya a tu selección desde los mejores sports bars y vive el partido como se debe. 🍻</p>
-          <div><a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a></div>
+          <h6 class="ads-title fw-bold mb-3" style="color: #ffff;">⚽ ¡Vamos Selección!</h6>       
+          <p class="ads-text mb-4">Apoya a Selección desde los mejores sports bars de tu ciudad y vive el partido como se debe. 🍻</p>
+          <div><a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Apoyar a Tu Ciudad</a></div>
         </div>
       </div>
     
@@ -1802,12 +1798,12 @@
           </table>
         </div>
 
-        <!-- ANUNCIO -->
+        <!-- ANUNCIO 3 -->
         <div class="card p-4 mb-3 text-center text-white border-0"
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">        
-          <h6 class="fw-bold mb-2" style="color: #ffff;">📊 La tabla está cerrada… el ambiente no</h6>       
-          <p class="mb-3">Sigue a tu selección en los mejores sports bars de tu ciudad. ⚽🔥</p>
-          <div><a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a></div>
+          <h6 class="ads-title fw-bold mb-2" style="color: #ffff;">📊 La tabla está cerrada… el ambiente en tu ciudad no</h6>       
+          <p class="ads-text mb-3">Sigue a tu selección en los mejores sports bars de tu ciudad. ⚽🔥</p>
+          <div><a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Seguir a mi Equipo</a></div>
         </div>
     
         <!-- GRUPO D -->
@@ -2008,12 +2004,12 @@
           </table>
         </div>
 
-        <!-- ANUNCIO -->
+        <!-- ANUNCIO 4 -->
         <div class="card p-4 mb-3 text-center text-white border-0"
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">       
-          <h6 class="fw-bold mb-2" style="color: #ffff;">⚽ Cada punto se vive mejor acompañado</h6>       
-          <p class="mb-3">Apoya a tu equipo con ambiente, gritos y emoción real. 🍻</p>        
-          <div><a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a></div>     
+          <h6 class="ads-title fw-bold mb-2" style="color: #ffff;">⚽ Cada punto se vive mejor acompañado en tu ciudad</h6>       
+          <p class="ads-text mb-3">Apoya a tu equipo con ambiente, gritos y emoción real desde tu ciudad. 🍻</p>        
+          <div><a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Unirme al Ambiente</a></div>     
         </div>
     
         <!-- GRUPO G -->
@@ -2214,12 +2210,12 @@
           </table>
         </div>
 
-        <!-- ANUNCIO -->
+        <!-- ANUNCIO 5 -->
         <div class="card p-4 mb-3 text-center text-white border-0"
           style="background: linear-gradient(135deg, #F59E0B, #D97706);">        
-          <h6 class="fw-bold mb-2" style="color: #ffff;">🔥 Se define el grupo… ¿dónde lo vas a ver?</h6>       
-          <p class="mb-3">Encuentra sports bars con el mejor ambiente para estos partidos clave.</p>       
-          <div><a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a></div>
+          <h6 class="ads-title fw-bold mb-2" style="color: #ffff;">🔥 Se define el grupo… ¿dónde lo vas a ver?</h6>       
+          <p class="ads-text mb-3">Encuentra sports bars en tu ciudad con el mejor ambiente para estos partidos clave.</p>       
+          <div><a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Dónde ver en Tu Ciudad</a></div>
         </div>
     
         <!-- GRUPO J -->
@@ -2474,15 +2470,14 @@
       </div>
     </div>
 
-    <!-- ANUNCIO -->
+    <!-- ANUNCIO 6 -->
     <div class="card flex-shrink-0 text-white d-flex justify-content-center align-items-center"
       style="width: 280px; background: linear-gradient(135deg, #F59E0B, #D97706);">  
       <div class="text-center p-3">
-        <h6 class="fw-bold" style="color: #ffff;">¿No vas al estadio? ✈️</h6>
-        <p class="small mb-3">Vive el partido con ambiente real y cerveza fría. 🍻</p>
-        <a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a>
+        <h6 class="ads-title fw-bold" style="color: #ffff;">¿No vas al estadio? ✈️</h6>
+        <p class="ads-text small mb-3">Disfruta el partido con ambiente real y cerveza fría desde tu ciudad. 🍻</p>
+        <a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Disfrutarlo en Tu Ciudad</a>
       </div>
-    
     </div>
 
     <!-- Estadio AKRON -->
@@ -2529,15 +2524,14 @@
       </div>
     </div>
 
-    <!-- ANUNCIO -->
+    <!-- ANUNCIO 7 -->
     <div class="card flex-shrink-0 text-white d-flex justify-content-center align-items-center"
       style="width: 280px; background: linear-gradient(135deg, #F59E0B, #D97706);">
       <div class="text-center p-3">
-        <h6 class="fw-bold" style="color: #ffff;">🏟️ No estás en el estadio… pero puedes sentirlo igual</h6>
-        <p class="small mb-3">Vive el ambiente del Mundial en los mejores sports bars. 🍻</p>
-        <a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a>
+        <h6 class="ads-title fw-bold" style="color: #ffff;">🏟️ No estás en el estadio… pero estás en tu ciudad y puedes sentirlo igual</h6>
+        <p class="ads-text small mb-3">Vive el ambiente del Mundial en los mejores sports bars de tu ciudad. 🍻</p>
+        <a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Vivir el Mundial</a>
       </div>
-    
     </div>
 
     <!-- Hard Rock Stadium -->
@@ -2584,15 +2578,14 @@
       </div>
     </div>
 
-    <!-- ANUNCIO -->
+    <!-- ANUNCIO 8 -->
     <div class="card flex-shrink-0 text-white d-flex justify-content-center align-items-center"
       style="width: 280px; background: linear-gradient(135deg, #F59E0B, #D97706);">
       <div class="text-center p-3">
-        <h6 class="fw-bold" style="color: #ffff;">⚽ La pasión no solo se vive en el estadio</h6>
-        <p class="small mb-3">Encuentra lugares donde el ambiente se siente igual o mejor.</p>
-        <a href="#sports-bars" class="btn btn-dark fw-semibold px-4">Conocer Sports Bars</a>
+        <h6 class=" ads-title fw-bold" style="color: #ffff;">⚽ La pasión no solo se vive en el estadio... también en tu ciudad</h6>
+        <p class="ads-text small mb-3">Encuentra lugares en tu ciudad donde el ambiente se siente igual o mejor.</p>
+        <a href="#" class="ads-btn btn btn-dark fw-semibold px-4">Reservar Ahora</a>
       </div>
-    
     </div>
 
     <!-- Mercedes-Benz Stadium -->
@@ -2643,7 +2636,7 @@
 </section>
 
 <!-- BARES ACAPULCO -->
-<section id="sports-bars" class="container my-5">
+<section id="sports-bars-acapulco" class="container my-5">
   <h4 class="mb-4 fw-bold">🍻 Sports Bars en Acapulco</h4>
   <div class="row g-3 pb-2 d-flex justify-content-center">
 
@@ -2767,7 +2760,7 @@
 </section>
 
 <!-- BARES QUERÉTARO -->
-<section id="sports-bars-puebla" class="container my-5">
+<section id="sports-bars-queretaro" class="container my-5">
   <h4 class="mb-4 fw-bold">🍻 Sports Bars en Querétaro</h4>
   <div class="row g-3 pb-2 d-flex justify-content-center">
 
@@ -2957,6 +2950,11 @@
 <!-- FUNCIONAMIENTO -->
 <script>
 function setBarData(nombre, imagen) {
+
+  // 🔥 Limpiar antes de cargar nuevo bar
+  document.getElementById("reservaForm").reset();
+
+  // 🔥 Asignar nuevo bar
   document.getElementById("barName").innerText = nombre;
   document.getElementById("barImg").src = imagen;
 }
@@ -2984,6 +2982,141 @@ Evento: ${evento}`;
 
   window.open(url, "_blank");
 });
+
+const modal = document.getElementById('reservaModal');
+
+modal.addEventListener('hidden.bs.modal', function () {
+
+  // 🔥 Limpiar formulario
+  document.getElementById("reservaForm").reset();
+
+  // 🔥 Limpiar datos del bar
+  document.getElementById("barName").innerText = "";
+  document.getElementById("barImg").src = "";
+
+});
+</script>
+
+<!-- MODAL CIUDAD -->
+<div class="modal fade" id="cityModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white p-4 text-center">
+
+      <h5 class="mb-3">📍 Selecciona tu ciudad</h5>
+      <p class="small">Para una experiencia personalizada: elige la ciudad en la que te encuentras.</p>
+
+      <select id="citySelectModal" class="form-select my-3">
+        <option value="">Selecciona tu ciudad</option>
+        <option>Acapulco</option>
+        <option>Puebla</option>
+        <option>Querétaro</option>
+      </select>
+
+      <button class="btn btn-warning w-100 fw-bold mb-3" onclick="saveCity()">
+        Continuar
+      </button>
+
+      <!-- MENSAJE LEGAL -->
+      <p style="font-size: 12px; opacity: 0.7;">
+        🍻 Disfruta responsablemente. Al continuar confirmas que eres mayor de edad.
+      </p>
+
+    </div>
+  </div>
+</div>
+<!-- FUNCIONAMIENTO -->
+<script>
+let cityModal;
+
+// 🚀 INICIALIZACIÓN
+window.addEventListener("DOMContentLoaded", () => {
+  const modalElement = document.getElementById("cityModal");
+  cityModal = new bootstrap.Modal(modalElement);
+
+  const savedCity = localStorage.getItem("city");
+
+  if (!savedCity) {
+    cityModal.show();
+  } else {
+    updateCity(savedCity);
+  }
+});
+
+// 💾 GUARDAR CIUDAD
+function saveCity() {
+  const select = document.getElementById("citySelectModal");
+  const city = select.value;
+
+  if (!city) return;
+
+  localStorage.setItem("city", city);
+  updateCity(city);
+
+  // ⚠️ Solo si existe la función
+  if (typeof refreshAdWithCurrentFilters === "function") {
+    refreshAdWithCurrentFilters();
+  }
+
+  cityModal.hide();
+}
+
+// 📍 ABRIR MODAL DESDE NAVBAR
+function openCityModal() {
+  cityModal.show();
+}
+
+// 🔥 ACTUALIZAR TODO EL SITIO
+function updateCity(city) {
+
+  // 🧠 Navbar
+  const cityText = document.getElementById("currentCity");
+  if (cityText) cityText.innerText = city;
+
+  // 🏙️ SECCIONES
+  const sections = {
+    Puebla: "sports-bars-puebla",
+    Acapulco: "sports-bars-acapulco",
+    "Querétaro": "sports-bars-queretaro"
+  };
+
+  // Ocultar todas
+  Object.values(sections).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = "none";
+  });
+
+  // Mostrar la seleccionada
+  if (sections[city]) {
+    const active = document.getElementById(sections[city]);
+    if (active) active.style.display = "block";
+  }
+
+  // 🎯 ACTUALIZAR ANUNCIOS (TODO EN UNO)
+  [".ads-title", ".ads-text", ".ads-btn"].forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+
+      if (!el.dataset.original) {
+        el.dataset.original = el.innerHTML;
+      }
+
+      let text = el.dataset.original;
+
+      if (city) {
+        text = text.replace(/tu ciudad/gi, city);
+        text = text.replace(/Tu Ciudad/gi, city);
+      }
+
+      el.innerHTML = text;
+    });
+  });
+
+  // 🔗 SCROLL DINÁMICO
+  document.querySelectorAll(".ads-btn").forEach(btn => {
+    if (sections[city]) {
+      btn.setAttribute("href", `#${sections[city]}`);
+    }
+  });
+}
 </script>
 
 <script src="script.js"></script>
