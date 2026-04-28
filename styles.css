@@ -62,7 +62,7 @@ h6 {
 }
 
 .scroll-box {
-  max-height: 73vh;   /* 🔥 altura de la ventana */
+  max-height: 69vh;   /* 🔥 altura de la ventana */
   overflow-y: auto;   /* activa scroll vertical */
 }
 
@@ -103,6 +103,10 @@ h6 {
   transform: translateY(-5px);
 }
 
+#sports-bars-acapulco, #sports-bars-puebla, #sports-bars-queretaro {
+  display: none;
+}
+
 .modal-content {
   border-radius: 12px;
 }
@@ -115,6 +119,17 @@ h6 {
 
 .modal input::placeholder {
   color: #94A3B8;
+}
+
+.modal-content {
+  border-radius: 12px;
+  background: #0F172A;
+}
+
+#citySelectModal {
+  background: #1E293B;
+  color: #ffffff;
+  border: none;
 }
 
 .footer-box {
