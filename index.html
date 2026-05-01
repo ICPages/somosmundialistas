@@ -275,14 +275,16 @@
 
           <!-- Jueves, 11 de junio -->
           <div class="col-lg-6">
-            <div class="card match" style="border: 3px solid #F59E0B;" data-team="México Sudáfrica" data-group="Grupo A" data-day="11 de junio">
-              <div class="presentado"><span><i class="bi bi-star-fill"></i> Presentado por: </span><img src="Imágenes/Icono.webp"> Beer Stadium</div>
+            <a class="sponsor-link" href="ejemplo.html">
+            <div class="card match" data-match-id="mexico-sudafrica" style="border: 3px solid #F59E0B;" data-team="México Sudáfrica" data-group="Grupo A" data-day="11 de junio">
+              <div class="presentado"><span><i class="bi bi-star-fill"></i> Presentado por: </span><img class="sponsor-logo" src="Imágenes/Icono.webp"> <span class="sponsor-name">Beer Stadium</span></div>
               <b><i class="bi bi-calendar"></i> Jueves, 11 de junio <i class="bi bi-clock"></i> 1:00 PM</b>
               <div>Grupo A</div>
               <div class="team"><span class="fi fi-mx"></span> México vs <span class="fi fi-za"></span> Sudáfrica</div>
               <div><i class="bi bi-geo-alt-fill"></i> Estadio Banorte, México</div>
               <div><i class="bi bi-display"></i> Azteca 7, TUDN, ViX+</div>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-6">
@@ -328,7 +330,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="card match" style="border: 3px solid #F59E0B;" data-team="Brasil Marruecos" data-group="Grupo C" data-day="13 de junio">
+            <div class="card match" data-match-id="brasil-marruecos" style="border: 3px solid #F59E0B;" data-team="Brasil Marruecos" data-group="Grupo C" data-day="13 de junio">
               <div class="presentado"><span><i class="bi bi-star-fill"></i> Presentado por: </span><img src="Imágenes/Icono.webp"> Beer Stadium</div>
               <b><i class="bi bi-calendar"></i> Sábado, 13 de junio <i class="bi bi-clock"></i> 4:00 PM</b>
               <div>Grupo C</div>
@@ -1053,7 +1055,7 @@
       <!-- DERECHA - GRUPOS -->
       <div class="col-lg-4">
         <h4 class="mb-4 fw-bold">📊 Grupos</h4>
-        <div id="matches" class="scroll-box row g-2">
+        <div id="groups" class="scroll-box row g-2">
 
           <!-- GRUPO A -->
           <div class="card p-3 mb-3">
@@ -2092,17 +2094,17 @@
       <h4 class="mb-4 fw-bold">🍻 Sports Bars en Acapulco</h4>
       <div class="row g-3 pb-2 d-flex justify-content-center">
 
-        <!-- Bahía Fan Zone -->
+        <!-- Angels House Acapulco -->
         <div class="col-lg-4 col-md-6 d-flex justify-content-center">
           <div class="card bar-card-pro shadow">
             <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Bahía Fan Zone 1.webp" alt="Bahía Fan Zone"></div>
+            <div class="bar-cover"><img src="Imágenes/Angels House Acapulco Portada.webp" alt="Angels House Acapulco"></div>
             <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Bahía Fan Zone.webp" alt="logo"></div>
+            <div class="bar-logo"><img src="Imágenes/Angels House Acapulco.webp" alt="logo"></div>
             <!-- CONTENIDO -->
             <div class="bar-content">
-              <h5 class="bar-title">Bahía Fan Zone</h5>
-              <p class="bar-desc">El mejor lugar en Acapulco para vivir el fútbol con buena comida, bebidas y el mejor ambiente.</p>
+              <h5 class="bar-title">Angels House Acapulco</h5>
+              <p class="bar-desc">El spot ideal para vivir el fútbol en Acapulco: pantallas, buen ambiente, bebidas frías y una vibra perfecta para disfrutar cada partido con amigos.</p>
               <!-- DETALLES -->
               <div class="bar-features">
         
@@ -2118,19 +2120,19 @@
         
                 <div class="feature">
                   <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$180 - $350</b></div>
+                  <div><small>Rango de Precios</small> <br> <b>$200 - $600</b></div>
                 </div>
         
                 <div class="feature">
                   <i class="bi bi-star-fill text-warning"></i>
-                  <div><small>Calificación</small> <br> <b class="text-success">4.5/5</b> </div>
+                  <div><small>Calificación</small> <br> <b class="text-success">4.3/5</b> </div>
                 </div>
         
               </div>
               <!-- BOTONES -->
               <div class="bar-actions">
                 <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Acapulco Bahía Fan Zone','Imágenes/Bahía Fan Zone.webp')">
+                  onclick="setBarData('Angels House Acapulco','Imágenes/Angels House Acapulco.webp')">
                   <i class="bi bi-calendar"></i> Reservar</button>
                 <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
                   más detalles</a>
@@ -2139,17 +2141,17 @@
           </div>
         </div>
 
-        <!-- Costa Gol Sports Bar -->
+        <!-- Santana's Sports & Snack Bar -->
         <div class="col-lg-4 col-md-6 d-flex justify-content-center">
           <div class="card bar-card-pro shadow">
             <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Costa Gol Sports Bar 1.webp" alt="Costa Gol Sports Bar"></div>
+            <div class="bar-cover"><img src="Imágenes/Santana's Sports & Snack Bar Portada.webp" alt="Santana's Sports & Snack Bar"></div>
             <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Costa Gol Sports Bar.webp" alt="logo"></div>
+            <div class="bar-logo"><img src="Imágenes/Santana's Sports & Snack Bar.webp" alt="logo"></div>
             <!-- CONTENIDO -->
             <div class="bar-content">
-              <h5 class="bar-title">Costa Gol Sports Bar</h5>
-              <p class="bar-desc">Ambiente vibrante para ver los partidos en vivo con excelente audio, comida variada y bebidas bien frías.</p>
+              <h5 class="bar-title">Santana's Sports & Snack Bar</h5>
+              <p class="bar-desc">Un clásico para ver deportes con snacks deliciosos, chelas bien frías y ambiente relajado donde cada partido se disfruta al máximo.</p>
               <!-- DETALLES -->
               <div class="bar-features">
                 <div class="feature">
@@ -2162,18 +2164,18 @@
                 </div>
                 <div class="feature">
                   <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$150 - $320</b></div>
+                  <div><small>Rango de Precios</small> <br> <b>$200 - $300</b></div>
                 </div>
                 <div class="feature">
                   <i class="bi bi-star-fill text-warning"></i>
-                  <div><small>Calificación</small> <br> <b class="text-success">4.6/5</b> </div>
+                  <div><small>Calificación</small> <br> <b class="text-success">4.3/5</b> </div>
                 </div>
         
               </div>
               <!-- BOTONES -->
               <div class="bar-actions">
                 <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Costa Gol Sports Bar','Imágenes/Costa Gol Sports Bar.webp')">
+                  onclick="setBarData('Santana\'s Sports & Snack Bar','Imágenes/Santana\'s Sports & Snack Bar.webp')">
                   <i class="bi bi-calendar"></i> Reservar</button>
                 <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
                   más detalles</a>
@@ -2182,17 +2184,17 @@
           </div>
         </div>
 
-        <!-- Playoff Acapulco Bar -->
+        <!-- Brooklyn's Sports House & Bar -->
         <div class="col-lg-4 col-md-6 d-flex justify-content-center">
           <div class="card bar-card-pro shadow">
             <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Playoff Acapulco Bar 1.webp" alt="Playoff Acapulco Bar"></div>
+            <div class="bar-cover"><img src="Imágenes/Brooklyn's Sports House & Bar Portada.webp" alt="Brooklyn's Sports House & Bar"></div>
             <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Playoff Acapulco Bar.webp" alt="logo"></div>
+            <div class="bar-logo"><img src="Imágenes/Brooklyn's Sports House & Bar.webp" alt="logo"></div>
             <!-- CONTENIDO -->
             <div class="bar-content">
-              <h5 class="bar-title">Playoff Acapulco Bar</h5>
-              <p class="bar-desc">Bar deportivo con ambiente relajado, ideal para disfrutar el fútbol con amigos y promociones en bebidas.</p>
+              <h5 class="bar-title">Brooklyn's Sports House & Bar</h5>
+              <p class="bar-desc">Ambiente tipo sports bar americano con múltiples pantallas, excelente comida y bebidas para no perderte ni un solo momento del juego.</p>
               <!-- DETALLES -->
               <div class="bar-features">
                 <div class="feature">
@@ -2201,22 +2203,22 @@
                 </div>
                 <div class="feature">
                   <i class="bi bi-car-front-fill"></i>
-                  <div><small>Estacionamiento</small> <br> <b class="text-danger">No</b></div>
+                  <div><small>Estacionamiento</small> <br> <b class="text-success">Sí</b></div>
                 </div>
                 <div class="feature">
                   <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$120 - $280</b></div>
+                  <div><small>Rango de Precios</small> <br> <b>$200 - $300</b></div>
                 </div>
                 <div class="feature">
                   <i class="bi bi-star-fill text-warning"></i>
-                  <div><small>Calificación</small> <br> <b class="text-success">4.2/5</b> </div>
+                  <div><small>Calificación</small> <br> <b class="text-success">4.4/5</b> </div>
                 </div>
         
               </div>
               <!-- BOTONES -->
               <div class="bar-actions">
                 <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Playoff Acapulco Bar','Imágenes/Playoff Acapulco Bar.webp')">
+                  onclick="setBarData('Brooklyn\'s Sports House & Bar','Imágenes/Brooklyn\'s Sports House & Bar.webp')">
                   <i class="bi bi-calendar"></i> Reservar</button>
                 <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
                   más detalles</a>
@@ -2243,7 +2245,7 @@
             <!-- CONTENIDO -->
             <div class="bar-content">
               <h5 class="bar-title">Milán Tojos FC</h5>
-              <p class="bar-desc">¡El mejor sports bar de Puebla! Comida deliciosa, ambiente deportivo y promos todos los días. ¡Ven a la cancha y difruta tus deportes favoritos con comida de campeonato!</p>
+              <p class="bar-desc">Un espacio futbolero con gran ambiente, ideal para reunirte con amigos, disfrutar los partidos y vivir la pasión del deporte.</p>
               <!-- DETALLES -->
               <div class="bar-features">
         
@@ -2290,18 +2292,18 @@
             <!-- CONTENIDO -->
             <div class="bar-content">
               <h5 class="bar-title">El Emparrillado Steak Market</h5>
-              <p class="bar-desc">Exquisitos y jugosos cortes, tacos y mucho más... también contamos con Steak Market Angus. Cortes al carbón + tacos, drinks & buen ambiente. ¡Aquí se vive el partido!</p>
+              <p class="bar-desc">Cortes de calidad, bebidas y deportes en vivo: combina una experiencia gastronómica premium con la emoción del fútbol.</p>
               <!-- DETALLES -->
               <div class="bar-features">
         
                 <div class="feature">
                   <i class="bi bi-display"></i>
-                  <div><small>Pantallas</small> <br> <b class="text-success">Si</b></div>
+                  <div><small>Pantallas</small> <br> <b class="text-success">Sí</b></div>
                 </div>
         
                 <div class="feature">
                   <i class="bi bi-car-front-fill"></i>
-                  <div><small>Estacionamiento</small> <br> <b class="text-success">Si</b></div>
+                  <div><small>Estacionamiento</small> <br> <b class="text-success">Sí</b></div>
                 </div>
         
                 <div class="feature">
@@ -2337,13 +2339,13 @@
             <!-- CONTENIDO -->
             <div class="bar-content">
               <h5 class="bar-title">El Recorte Sport Bar</h5>
-              <p class="bar-desc">Deportes, promos, cervezas, tacos, hamburguesas, snacks, cortes y más. Vive la pasión de tus deportes favoritos en cualquiera de nuestras sucursales.</p>
+              <p class="bar-desc">Un lugar cómodo y accesible para ver los partidos, con buen ambiente, promociones y todo lo necesario para disfrutar el juego.</p>
               <!-- DETALLES -->
               <div class="bar-features">
         
                 <div class="feature">
                   <i class="bi bi-display"></i>
-                  <div><small>Pantallas</small> <br> <b class="text-success">Si</b></div>
+                  <div><small>Pantallas</small> <br> <b class="text-success">Sí</b></div>
                 </div>
         
                 <div class="feature">
@@ -2382,117 +2384,23 @@
       <h4 class="mb-4 fw-bold">🍻 Sports Bars en Querétaro</h4>
       <div class="row g-3 pb-2 d-flex justify-content-center">
 
-        <!-- Querétaro Fan Club Bar -->
+        <!-- Goat Restaurant & Sports Bar -->
         <div class="col-lg-4 col-md-6 d-flex justify-content-center">
           <div class="card bar-card-pro shadow">
             <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Querétaro Fan Club Bar 1.webp" alt="Querétaro Fan Club Bar"></div>
+            <div class="bar-cover"><img src="Imágenes/Goat Restaurant & Sports Bar Portada.webp" alt="Goat Restaurant & Sports Bar"></div>
             <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Querétaro Fan Club Bar.webp" alt="logo"></div>
-            <!-- CONTENIDO -->
-            <div class="bar-content">
-              <h5 class="bar-title">Querétaro Fan Club Bar</h5>
-              <p class="bar-desc">Excelente opción para ver partidos con comida gourmet, mixología y atención de primera.</p>
-              <!-- DETALLES -->
-              <div class="bar-features">
-        
-                <div class="feature">
-                  <i class="bi bi-display"></i>
-                  <div><small>Pantallas</small> <br> <b class="text-success">Si</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-car-front-fill"></i>
-                  <div><small>Estacionamiento</small> <br> <b class="text-success">Sí</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$250 - $500</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <div><small>Calificación</small> <br> <b class="text-success">4.9/5</b> </div>
-                </div>
-        
-              </div>
-              <!-- BOTONES -->
-              <div class="bar-actions">
-                <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Querétaro Fan Club Bar','Imágenes/Querétaro Fan Club Bar.webp')">
-                  <i class="bi bi-calendar"></i> Reservar</button>
-                <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
-                  más detalles</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tercer Tiempo Qro -->
-        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="card bar-card-pro shadow">
-            <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Tercer Tiempo Qro 1.webp" alt="Tercer Tiempo Qro"></div>
-            <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Tercer Tiempo Qro.webp" alt="logo"></div>
+            <div class="bar-logo"><img src="Imágenes/Goat Restaurant & Sports Bar.webp" alt="logo"></div>
             <!-- CONTENIDO -->
             <div class="bar-content">
               <h5 class="bar-title">Tercer Tiempo Qro</h5>
-              <p class="bar-desc">Bar económico con buen ambiente, ideal para disfrutar el fútbol y amigos sin gastar demasiado.</p>
+              <p class="bar-desc">Un sports bar moderno con excelente comida, pantallas y ambiente perfecto para disfrutar el fútbol como se debe.</p>
               <!-- DETALLES -->
               <div class="bar-features">
         
                 <div class="feature">
                   <i class="bi bi-display"></i>
-                  <div><small>Pantallas</small> <br> <b class="text-danger">No</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-car-front-fill"></i>
-                  <div><small>Estacionamiento</small> <br> <b class="text-danger">No</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$90 - $180</b></div>
-                </div>
-        
-                <div class="feature">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <div><small>Calificación</small> <br> <b class="text-success">3.7/5</b> </div>
-                </div>
-        
-              </div>
-              <!-- BOTONES -->
-              <div class="bar-actions">
-                <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Tercer Tiempo Qro','Imágenes/Tercer Tiempo Qro.webp')">
-                  <i class="bi bi-calendar"></i> Reservar</button>
-                <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
-                  más detalles</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Zona 90 Sports Bar -->
-        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="card bar-card-pro shadow">
-            <!-- PORTADA -->
-            <div class="bar-cover"><img src="Imágenes/Zona 90 Sports Bar 1.webp" alt="Zona 90 Sports Bar"></div>
-            <!-- LOGO -->
-            <div class="bar-logo"><img src="Imágenes/Zona 90 Sports Bar.webp" alt="logo"></div>
-            <!-- CONTENIDO -->
-            <div class="bar-content">
-              <h5 class="bar-title">Zona 90 Sports Bar</h5>
-              <p class="bar-desc">Espacio amplio con terraza, múltiples pantallas y ambiente perfecto para ver partidos en grupo.</p>
-              <!-- DETALLES -->
-              <div class="bar-features">
-        
-                <div class="feature">
-                  <i class="bi bi-display"></i>
-                  <div><small>Pantallas</small> <br> <b class="text-success">Si</b></div>
+                  <div><small>Pantallas</small> <br> <b class="text-success">Sí</b></div>
                 </div>
         
                 <div class="feature">
@@ -2502,7 +2410,7 @@
         
                 <div class="feature">
                   <i class="bi bi-currency-dollar"></i>
-                  <div><small>Rango de Precios</small> <br> <b>$180 - $350</b></div>
+                  <div><small>Rango de Precios</small> <br> <b>$200 - $300</b></div>
                 </div>
         
                 <div class="feature">
@@ -2514,7 +2422,54 @@
               <!-- BOTONES -->
               <div class="bar-actions">
                 <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
-                  onclick="setBarData('Zona 90 Sports Bar','Imágenes/Zona 90 Sports Bar.webp')">
+                  onclick="setBarData('Goat Restaurant & Sports Bar','Imágenes/Goat Restaurant & Sports Bar.webp')">
+                  <i class="bi bi-calendar"></i> Reservar</button>
+                <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
+                  más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- College Bar Querétaro -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="card bar-card-pro shadow">
+            <!-- PORTADA -->
+            <div class="bar-cover"><img src="Imágenes/College Bar Querétaro Portada.webp" alt="College Bar Querétaro"></div>
+            <!-- LOGO -->
+            <div class="bar-logo"><img src="Imágenes/College Bar Querétaro.webp" alt="logo"></div>
+            <!-- CONTENIDO -->
+            <div class="bar-content">
+              <h5 class="bar-title">College Bar Querétaro</h5>
+              <p class="bar-desc">Ambiente juvenil, ideal para ver partidos con amigos, disfrutar bebidas y vivir cada jugada con energía.</p>
+              <!-- DETALLES -->
+              <div class="bar-features">
+        
+                <div class="feature">
+                  <i class="bi bi-display"></i>
+                  <div><small>Pantallas</small> <br> <b class="text-success">Sí</b></div>
+                </div>
+        
+                <div class="feature">
+                  <i class="bi bi-car-front-fill"></i>
+                  <div><small>Estacionamiento</small> <br> <b class="text-success">Sí</b></div>
+                </div>
+        
+                <div class="feature">
+                  <i class="bi bi-currency-dollar"></i>
+                  <div><small>Rango de Precios</small> <br> <b>$200 - $300</b></div>
+                </div>
+        
+                <div class="feature">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <div><small>Calificación</small> <br> <b class="text-success">4.3/5</b> </div>
+                </div>
+        
+              </div>
+              <!-- BOTONES -->
+              <div class="bar-actions">
+                <button class="btn btn-warning w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#reservaModal"
+                  onclick="setBarData('College Bar Querétaro','Imágenes/College Bar Querétaro.webp')">
                   <i class="bi bi-calendar"></i> Reservar</button>
                 <a href="sport-bar.html" class="btn btn-outline-dark w-100 fw-semibold"><i class="bi bi-info-circle"></i> Ver
                   más detalles</a>
@@ -2772,7 +2727,6 @@ function updateCity(city) {
     const cityText = document.getElementById("currentCity");
     if (cityText) cityText.innerText = city;
 
-
     const sections = {
         Puebla: "sports-bars-puebla",
         Acapulco: "sports-bars-acapulco",
@@ -2812,7 +2766,13 @@ function updateCity(city) {
             btn.setAttribute("href", `#${sections[city]}`);
         }
     });
+
+    // 🔥 ESTA ES LA CLAVE
+    if (typeof updateSponsors === "function") {
+        updateSponsors();
+    }
 }
+
   </script>
 
   <script src="script.js"></script>
