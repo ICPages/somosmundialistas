@@ -79,7 +79,7 @@ function showTodayMatches() {
     todayText = todayText.charAt(0).toUpperCase() + todayText.slice(1);
 
     // Ejemplo: "Jueves, 11 de junio"
-    
+
     document.querySelectorAll(".match").forEach(match => {
         const matchDay = match.dataset.day;
 
@@ -139,26 +139,77 @@ function setSmartDayFilter() {
     filterMatches();
 }
 
-// Ejecutar al cargar
 setSmartDayFilter();
 
-
-// VOTACIONES
-function vote(btn, type) {
-    const match = btn.closest(".match");
-
-    if (!match.votes) {
-        match.votes = { home: 0, draw: 0, away: 0 };
+// PATROCINADORES DE PARTIDOS
+const sponsorsByCity = {
+    "Acapulco": {
+//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
+    },
+    "Puebla": {
+//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
+    },
+    "Querétaro": {
+//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
     }
+};
 
-    match.votes[type]++;
+function updateSponsors() {
 
-    const total = match.votes.home + match.votes.draw + match.votes.away;
+    const city = localStorage.getItem("city") || "";
+    const sponsors = sponsorsByCity[city] || {};
 
-    const h = Math.round((match.votes.home / total) * 100);
-    const d = Math.round((match.votes.draw / total) * 100);
-    const a = Math.round((match.votes.away / total) * 100);
+    document.querySelectorAll("[data-match-id]").forEach(match => {
 
-    match.querySelector(".result").innerHTML =
-        `Local ${h}% | Empate ${d}% | Visitante ${a}%`;
+        const matchId = match.dataset.matchId;
+        if (!matchId) return;
+
+        const logo = match.querySelector(".sponsor-logo");
+        const name = match.querySelector(".sponsor-name");
+
+        // 🔥 FIX AQUÍ
+        const link = match.closest(".col-lg-6")?.querySelector(".sponsor-link");
+
+        if (!logo || !name) return;
+
+        if (sponsors[matchId]) {
+            const sponsor = sponsors[matchId];
+
+            logo.src = sponsor.logo;
+            name.textContent = sponsor.name;
+
+            if (link) link.href = sponsor.link;
+        }
+    });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateSponsors();
+});
