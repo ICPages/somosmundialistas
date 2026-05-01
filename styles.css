@@ -39,6 +39,10 @@ h6 {
   color: #F59E0B;
 }
 
+.sponsor-link {
+  text-decoration: none;
+}
+
 .match {
     padding: 12px;
     margin-bottom: 10px;
