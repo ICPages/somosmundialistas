@@ -144,39 +144,39 @@ setSmartDayFilter();
 // PATROCINADORES DE PARTIDOS
 const sponsorsByCity = {
     "Acapulco": {
-//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-sudafrica": { name: "Beer Stadium", logo: "Imágenes/Icono.webp", link: "index.html" },
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" },
 //        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
     },
     "Puebla": {
-//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-sudafrica": { name: "Beer Stadium", logo: "Imágenes/Icono.webp", link: "index.html" },
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" },
 //        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
     },
     "Querétaro": {
-//        "mexico-sudafrica": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" }
-//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" }
+//        "mexico-sudafrica": { name: "Beer Stadium", logo: "Imágenes/Icono.webp", link: "index.html" },
+//        "brasil-marruecos": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "argentina-argelia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "inglaterra-croacia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "mexico-coreadelsur": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "chequia-mexico": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "ecuador-alemania": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "noruega-francia": { name: "", logo: "Imágenes/.webp", link: ".html" },
+//        "uruguay-españa": { name: "", logo: "Imágenes/.webp", link: ".html" },
 //        "colombia-portugal": { name: "", logo: "Imágenes/.webp", link: ".html" }
     }
 };
