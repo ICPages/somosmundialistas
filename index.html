@@ -2411,7 +2411,7 @@
             <div class="bar-logo"><img src="Imágenes/Goat Restaurant & Sports Bar.webp" alt="logo"></div>
             <!-- CONTENIDO -->
             <div class="bar-content">
-              <h5 class="bar-title">Goat Restaurant & Sports Bar</h5>
+              <h5 class="bar-title">Tercer Tiempo Qro</h5>
               <p class="bar-desc">Un sports bar moderno con excelente comida, pantallas y ambiente perfecto para disfrutar el fútbol como se debe.</p>
               <!-- DETALLES -->
               <div class="bar-features">
@@ -2608,8 +2608,6 @@
 
             <input type="text" id="nombre" class="form-control mb-2" placeholder="Tu nombre" required>
 
-            <input type="email" id="correo" class="form-control mb-2" placeholder="Correo (opcional)">
-
             <input type="date" id="fecha" class="form-control mb-2" required>
 
             <input type="time" id="hora" class="form-control mb-2" required>
@@ -2631,50 +2629,82 @@
   <script>
     function setBarData(nombre, imagen) {
 
-    // 🔥 Limpiar antes de cargar nuevo bar
-    document.getElementById("reservaForm").reset();
+      // 🔥 Limpiar antes de cargar nuevo bar
+      document.getElementById("reservaForm").reset();
 
-    // 🔥 Asignar nuevo bar
-    document.getElementById("barName").innerText = nombre;
-    document.getElementById("barImg").src = imagen;
+      // 🔥 Asignar nuevo bar
+      document.getElementById("barName").innerText = nombre;
+      document.getElementById("barImg").src = imagen;
+    }
+
+    function formatearFecha(fechaISO) {
+      const [year, month, day] = fechaISO.split("-");
+
+      const fecha = new Date(year, month - 1, day);
+
+      const opciones = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      };
+
+      let fechaTexto = fecha.toLocaleDateString('es-MX', opciones);
+
+      // 🔥 Capitalizar primera letra
+      fechaTexto = fechaTexto.charAt(0).toUpperCase() + fechaTexto.slice(1);
+
+      return fechaTexto;
+    }
+
+    function formatearHora(hora24) {
+  const [horas, minutos] = hora24.split(":");
+
+  let h = parseInt(horas);
+  const ampm = h >= 12 ? "PM" : "AM";
+
+  h = h % 12;
+  h = h ? h : 12; // 🔥 convierte 0 → 12
+
+  return `${h}:${minutos} ${ampm}`;
 }
 
-document.getElementById("reservaForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    document.getElementById("reservaForm").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("correo").value || "No proporcionado";
-    const fecha = document.getElementById("fecha").value;
-    const hora = document.getElementById("hora").value;
-    const personas = document.getElementById("personas").value;
-    const evento = document.getElementById("evento").value;
-    const bar = document.getElementById("barName").innerText;
+      const nombre = document.getElementById("nombre").value;
+      const fechaRaw = document.getElementById("fecha").value;
+      const fecha = formatearFecha(fechaRaw);
+      const horaRaw = document.getElementById("hora").value;
+const hora = formatearHora(horaRaw);
+      const personas = document.getElementById("personas").value;
+      const evento = document.getElementById("evento").value;
+      const bar = document.getElementById("barName").innerText;
 
-    const mensaje = `¡Hola! Quiero hacer una reservación en *${bar}*.\n
-Nombre: ${nombre}
-Correo: ${correo}
-Fecha: ${fecha}
-Hora: ${hora}
-Personas: ${personas}
-Evento: ${evento}`;
+      const mensaje = `¡Hola! Quiero hacer una reservación en *${bar}*.\n
+  Nombre: ${nombre}
+  Fecha: ${fecha}
+  Hora: ${hora}
+  Personas: ${personas}
+  Evento: ${evento}`;
 
-    const url = `https://wa.me/522221106016?text=${encodeURIComponent(mensaje)}`;
+      const url = `https://wa.me/522221106016?text=${encodeURIComponent(mensaje)}`;
 
-    window.open(url, "_blank");
-});
+      window.open(url, "_blank");
+    });
 
-const modal = document.getElementById('reservaModal');
+    const modal = document.getElementById('reservaModal');
 
-modal.addEventListener('hidden.bs.modal', function () {
+    modal.addEventListener('hidden.bs.modal', function () {
 
-    // 🔥 Limpiar formulario
-    document.getElementById("reservaForm").reset();
+      // 🔥 Limpiar formulario
+      document.getElementById("reservaForm").reset();
 
-    // 🔥 Limpiar datos del bar
-    document.getElementById("barName").innerText = "";
-    document.getElementById("barImg").src = "";
+      // 🔥 Limpiar datos del bar
+      document.getElementById("barName").innerText = "";
+      document.getElementById("barImg").src = "";
 
-});
+    });
   </script>
 
   <!-- MODAL CIUDAD -->
